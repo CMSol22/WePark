@@ -1,0 +1,27 @@
+GET http://localhost:3000/users
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "fName": "Alex",
+    "lName": "Wackelin",
+    "userEmail": "18wackelinal@fpsct.org",
+    "userName": "wackAttack",
+    "password": "password"
+}
+
+###
+
+PUT http://localhost:3000/users/60eca0e73ff9f51d30a43cda
+Content-Type: application/json
+
+{
+    "password": "It$Wack"
+}
+
+###
+
+DELETE http://localhost:3000/users/
