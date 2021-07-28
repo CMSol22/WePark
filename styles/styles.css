@@ -1,0 +1,57 @@
+/* General Properties */
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+  
+a {
+    text-decoration: none;
+    color: navy;
+}
+
+a:visited {
+  text-decoration: none;
+  color: navy;
+}
+
+#signUpLegend {
+  text-align: center;
+  font-size: 60px;
+}
+
+#wePark {
+  color: navy;
+  font-size: 60px;
+  position: absolute;
+  top: 5px;
+}
+
+/* Form Styling*/
+div > input {
+  border: solid navy 4px;
+  border-top: none;
+  border-right: none;
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+div > label {
+  font-size: 20px;
+  font-family: cursive;
+}
+
+/* Containers */
+#signUpFieldset {
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+  padding: 30px;
+  margin: auto;
+  border: 5px solid navy;
+  border-radius: 25px;
+  top: 110px;
+}
+
+.card {
+  width: 300px;
+}

@@ -1,43 +1,78 @@
-<html>
+<!DOCTYPE html>
 
+<html lang="en">
 <head>
-  <title>WePark</title>
-  <link rel="stylesheet" href="/stylesheets/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to WePark</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
-<body bgcolor=#ff8443>
-  <h1>WePark</h1>
-  <br>
-  <h2>Sign Up</h2>
-  <form method="GET">
-    <div>
-      <label for="fName">First Name</label>
-      <input type="text" name="fName" id="fName" required>
+<body style="background-color: #ff8443;">
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">WePark</a>
+        <button class="navbar-toggler">
+            <span class="navbar-toggler-icon" data-toggle="collapse"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="/park" class="nav-link">Park!</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Rewards</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ml-auto">
+                    <a href="/signup" class="nav-link">Sign In</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="col" style="top: 120px; right: 15px;">
+            <center>
+                <h1>Welcome to WePark</h1>
+                <h3>Let's get parking!</h3>
+            </center>
+        </div>
     </div>
 
-    <div>
-      <label for="lName">Last Name</label>
-      <input type="text" name="lName" id="lName" required>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="top: 240px;">
+                    <img class="card-img-top" src="images/Road.jpg" alt="Road">
+                    <div class="card-body">
+                        <h5 class="card-title"><center>Park!</center></h5>
+                        <center><p class="card-text">Head over to the map and get started with parking!</p></center>
+                        <br>
+                        <center><a href="/park" class="btn btn-primary">Go!</a></center>
+                    </div>
+                </div>
+            </div>
+            <div class="col" style="top: 315px; left:145px;">
+                <h1>OR</h1>
+            </div>
+            <div class="col">
+                <div class="card" style="top: 240px;">
+                    <img class="card-img-top" src="images/WePark profile.png" alt="Profile Image">
+                    <div class="card-body">
+                        <h5 class="card-title"><center>Sign In</center></h5>
+                        <center><p class="card-text">Sign into your profile and head over to the map</p></center>
+                        <br>
+                        <center><a href="/signup" class="btn btn-primary">Go!</a></center>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div>
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" required>
-    </div>
-
-    <div>
-      <label for="username">Username</label>
-      <input type="text" name="username" id="username" required>
-    </div>
-
-    <div>
-      <label for="password">Password</label>
-      <input type="password" name="password" id="password" required>
-    </div>
-
-    <button type="reset" name=rst>Reset</button>
-    <button type="submit" name="btn">Submit</button>
-  </form>
+    
 </body>
-
 </html>

@@ -1,21 +1,23 @@
-GET http://localhost:3000/users
-
+//RESTClient allows you to call a REST API directly from VSCode; Postman is an alternative
+GET http://localhost:3000/users/get
+//GET is a REST verb, describes the action
 ###
 
-POST http://localhost:3000/users
+POST http://localhost:3000/users/create
+//Tells the server we are sending JSON to it
 Content-Type: application/json
 
 {
-    "fName": "Alex",
-    "lName": "Wackelin",
-    "userEmail": "18wackelinal@fpsct.org",
-    "userName": "wackAttack",
-    "password": "password"
+    "fName": "Chris",
+    "lName": "Moreno",
+    "userEmail": "cjm6771@psu.edu",
+    "userName": "cjm6771",
+    "password": "L10n$"
 }
 
 ###
 
-PUT http://localhost:3000/users/60eca3035c05e57eb024ec33
+PUT http://localhost:3000/users/update/
 Content-Type: application/json
 
 {
@@ -24,4 +26,4 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3000/users/60eca0e73ff9f51d30a43cda
+DELETE http://localhost:3000/users/delete/60f72f2e0f6360f51d1b4aac
